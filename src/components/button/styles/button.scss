@@ -1,0 +1,19 @@
+.button{
+
+  $buttonBg: #FFC81B;
+  $buttonColor: #004461;
+
+
+  width: 100%;
+  max-width: 212px;
+  background-color:$buttonBg;
+  color:$buttonColor;
+  font-size: 18px;
+  font-family: 'OpenSans', 'sans-serif';
+  font-weight: 700;
+  border-radius: 5px;
+  border:none;
+  outline: none;
+  padding: 10px;
+  cursor: pointer;
+}

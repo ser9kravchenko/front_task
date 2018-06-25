@@ -1,0 +1,12 @@
+.stars-list{
+  padding: 0;
+  margin: 0px;
+  list-style: none;
+  .stars-list__star{
+    display: inline-block;
+    width: 18px;
+    height: 16px;
+    background-image: url('../images/star.svg');
+    background-size: cover;
+  }
+}

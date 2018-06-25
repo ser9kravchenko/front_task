@@ -1,0 +1,31 @@
+.rating{
+
+  $labelColor: #424242;
+  $blue:#006FA0;
+
+  padding: 0;
+
+  .rating__label{
+    color: $labelColor;
+    font-size: 14px;
+    font-family: 'OpenSans', 'sans-serif';
+    display: inline-block;
+    margin-right: 4px;
+  }
+
+  .rating__item{
+    display: inline-block;
+  }
+
+  .rating_list{
+    display: inline-block;
+    margin-right: 6px;
+    transform: translateY(1px);
+  }
+
+  .rating__score{
+    color: $blue;
+    font-size: 18px;
+    font-family: 'OpenSans', 'sans-serif';
+  }
+}

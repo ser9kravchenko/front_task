@@ -1,0 +1,26 @@
+.blue-block{
+
+  $blue: #006FA0;
+  $lightBlue: #F2FAFF;
+
+  color:$blue;
+  font-size: 14px;
+  font-family: 'OpenSans', 'sans-serif';
+  background-color: $lightBlue;
+  border-radius: 5px;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  flex:0 0 50%;
+  max-width: 185px;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+@media(max-width: 600px){
+  .blue-block{
+    max-width: initial;
+    flex: 0 1 100%;
+  }
+}

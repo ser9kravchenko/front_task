@@ -1,0 +1,18 @@
+.blue-blocks{
+
+  $blue: #006FA0;
+
+  .blue-blocks__title{
+    color:$blue;
+    font-size: 14px;
+    font-family: 'OpenSans', 'sans-serif';
+    display: block;
+    margin-bottom: 14px;
+  }
+
+  .blue-blocks__body{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,55 @@
+.person{
+
+  $blue:#006FA0;
+
+  .person__name{
+    display: block;
+    width:calc(100% - 90px);
+    font-family: 'OpenSans', 'sans-serif';
+    font-size: 18px;
+    font-weight: bold;
+    color:$blue;
+    float: left;
+    margin-top: 10px;
+  }
+
+  .person__photo{
+    width:70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+    float: left;
+  }
+
+  .person__rating{
+    float: left;
+    margin-top: 2px;
+  }
+
+  &:after{
+    content:'';
+    display: block;
+    clear: both;
+  }
+}
+
+@media(max-width:600px){
+  .person{
+    .person__photo{
+      display: block;
+      float: none;
+      margin: 0 auto;
+    }
+
+    .person__name{
+      float: none;
+      width: initial;
+      text-align: center;
+    }
+
+    .person__rating{
+      float: none;
+      text-align: center;
+    }
+  }
+}

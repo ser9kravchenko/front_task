@@ -1,0 +1,25 @@
+.feature{
+
+  $featureTextColor: #424242;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex:0 0 33.333333%;
+  max-width: 33.333333%;
+  padding-bottom: 20px;
+
+  .feature__image{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .feature__text{
+    display: block;
+    color: $featureTextColor;
+    font-family: 'OpenSans', 'sans-serif';
+    font-size: 14px;
+    margin-top: 6px;
+  }
+}
