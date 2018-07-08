@@ -1,14 +1,11 @@
 .feature{
-
-  $featureTextColor: #424242;
-
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  flex:0 0 33.333333%;
-  max-width: 33.333333%;
-  padding-bottom: 20px;
+  flex:1 0 auto;
+  padding-bottom: 18px;
+  margin: 0;
 
   .feature__image{
     display: block;

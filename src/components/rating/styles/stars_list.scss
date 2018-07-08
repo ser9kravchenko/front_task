@@ -2,11 +2,35 @@
   padding: 0;
   margin: 0px;
   list-style: none;
-  .stars-list__star{
-    display: inline-block;
-    width: 18px;
-    height: 16px;
-    background-image: url('../images/star.svg');
-    background-size: cover;
+  width: 100px;
+  height: 20px;
+  position: relative;
+  .stars-list__stars{
+    display: block;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    overflow: hidden;
+    background: $white;
+    bottom:-2px;
+
+    &.stars-list__stars_yellow{
+      z-index: 2;
+
+      img{
+        position: absolute;
+        bottom:0;
+      }
+    }
+
+    &.stars-list__stars_grey{
+
+      img{
+        position: absolute;
+        bottom:0;
+      }
+    }
+
+
   }
 }

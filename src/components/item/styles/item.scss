@@ -1,29 +1,25 @@
 
 .item{
 
-  $white: #fff;
-  $lightBlue: rgba(0, 111, 160, 0.4);
-  $shadowColor: rgba(0,0,0,0.08);
-
+  box-sizing: border-box;
   background-color: $white;
   box-shadow: 0 6px 9px 0 $shadowColor;
-  flex:0 0 100%;
+  flex:1 0 100%;
   max-width: 460px;
   border-radius: 24px;
   padding: 35px 30px 30px 30px;
-  margin: 0 auto;
 
   .item__header{
-    border-bottom: 1px solid $lightBlue;
+    border-bottom: 1px solid $lightBlue_04_opacity;
     padding-bottom: 25px;
   }
 
   .item__body{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap;
-    border-bottom: 1px solid $lightBlue;
-    padding: 18px 0 0;
+    border-bottom: 1px solid $lightBlue_04_opacity;
+    padding: 14px 0 0;
   }
 
   .item__footer{
@@ -31,7 +27,7 @@
   }
 
   .item__button{
-    margin: 20px auto 0;
+    margin: 30px auto 0;
     text-align: center;
   }
 }

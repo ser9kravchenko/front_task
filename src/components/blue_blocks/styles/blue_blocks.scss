@@ -1,6 +1,6 @@
 .blue-blocks{
 
-  $blue: #006FA0;
+  overflow: hidden;
 
   .blue-blocks__title{
     color:$blue;
@@ -11,8 +11,11 @@
   }
 
   .blue-blocks__body{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    margin: 0 0 -10px -30px;
+
+    .blue-block{
+      margin: 0 0 10px 28px;
+      display: inline-block;
+    }
   }
 }

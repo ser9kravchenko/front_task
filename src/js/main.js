@@ -1,13 +1,14 @@
 //= partials/jquery.min.js
 //= partials/slick.min.js
 
-$('.items-slider').slick({
+$('.items-slider .items-slider__content').slick({
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 1,
-    nextArrow:'.controls.next',
-    prevArrow:'.controls.prev',
+    nextArrow:'.items-slider__controls.items-slider__controls_next',
+    prevArrow:'.items-slider__controls.items-slider__controls_prev',
     dots:true,
+    appendDots:'.items-slider__dots',
     responsive: [
         {
             breakpoint: 1200,

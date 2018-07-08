@@ -1,23 +1,40 @@
 @font-face {
   font-family: 'OpenSans';
-  src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  src: url('../fonts/OpenSans-Regular.ttf') format('truetype'),
+  url('../fonts/OpenSans-Regular.woff') format('woff'),
+  url('../fonts/OpenSans-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url('../fonts/OpenSans-Light.ttf') format('truetype');
+  src: url('../fonts/OpenSans-Light.ttf') format('truetype'),
+  url('../fonts/OpenSans-Light.woff') format('woff'),
+  url('../fonts/OpenSans-Light.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+  src: url('../fonts/OpenSans-Bold.ttf') format('truetype'),
+  url('../fonts/OpenSans-Bold.woff') format('woff'),
+  url('../fonts/OpenSans-Bold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
 }
+
+$featureTextColor: #424242;
+$blue: #006FA0;
+$lightBlue: #F2FAFF;
+$buttonBg: #FFC81B;
+$buttonColor: #004461;
+$white: #fff;
+$lightBlue_04_opacity: rgba(0, 111, 160, 0.4);
+$shadowColor: rgba(0,0,0,0.08);
+$labelColor: #424242;
+
 
 body{
   margin: 0;
@@ -35,76 +52,6 @@ body{
   padding: 20px 0px;
 }
 
-.items-slider{
-
-  max-width: 1200px;
-  position: relative;
-  top:50%;
-  left:50%;
-  transform: translate3d(-50%, -50%, 0);
-
-  .slide{
-    outline: none;
-  }
-
-  .slick-list{
-    padding: 20px 0;
-  }
-
-  .slick-dots{
-    padding:0;
-    list-style: none;
-    margin: 25px auto 0;
-    text-align: center;
-
-    li{
-      display: inline-block;
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: rgba(19,193,229,0.4);
-      cursor:pointer;
-
-      &.slick-active{
-        background: #13C1E5;
-      }
-
-      &:not(:last-of-type){
-        margin-right: 18px;
-      }
-
-      button{
-        display: none;
-      }
-    }
-  }
-}
-
-.controls{
-  position: absolute;
-  width: 16px;
-  height: 30px;
-  border:none;
-  outline: none;
-  background: transparent;
-  top:50%;
-  margin-top: -15px;
-  cursor:pointer;
-  z-index: 5;
-  padding: 0px;
-
-  &.prev{
-    left:0;
-    background: url('../images/prev.svg') no-repeat center;
-    background-size: cover;
-  }
-
-  &.next{
-    right: 0;
-    background: url('../images/next.svg') no-repeat center;
-    background-size: cover;
-  }
-}
 
 @media(max-width:1200px){
   .controls{
@@ -154,4 +101,5 @@ body{
 @import "../components/blue_blocks/styles/blue_blocks";
 @import "../components/blue_blocks/styles/blue_block";
 @import "../components/button/styles/button";
+@import "partials/items_slider";
 @import "partials/slick";
