@@ -84,4 +84,27 @@
   }
 }
 
+@media(max-width:600px){
+  .items-slider{
+    position: relative;
+    top:inherit;
+    left:inherit;
+    transform: none;
+
+    .items-slider__content{
+
+      .slick-list{
+        margin: 0;
+      }
+
+      .slick-slide{
+        margin: 0;
+      }
+    }
+
+    .items-slider__controls{
+      display: none;
+    }
+  }
+}
 

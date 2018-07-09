@@ -74,6 +74,10 @@ body {
     margin: 30px auto 0;
     text-align: center; }
 
+@media (max-width: 600px) {
+  .item {
+    max-width: 320px; } }
+
 .person {
   display: flex;
   flex-direction: row; }
@@ -186,6 +190,13 @@ body {
       margin: 0 0 10px 28px;
       display: inline-block; }
 
+@media (max-width: 600px) {
+  .blue-blocks .blue-blocks__body {
+    margin: 0 0 -10px 0px; }
+    .blue-blocks .blue-blocks__body .blue-block {
+      margin: 0 0 10px 0;
+      display: block; } }
+
 .blue-block {
   color: #006FA0;
   font-size: 14px;
@@ -275,6 +286,20 @@ body {
       right: 0;
       background: url("../images/next.svg") no-repeat center;
       background-size: cover; }
+
+@media (max-width: 600px) {
+  .items-slider {
+    position: relative;
+    top: inherit;
+    left: inherit;
+    -webkit-transform: none;
+            transform: none; }
+    .items-slider .items-slider__content .slick-list {
+      margin: 0; }
+    .items-slider .items-slider__content .slick-slide {
+      margin: 0; }
+    .items-slider .items-slider__controls {
+      display: none; } }
 
 /* Slider */
 .slick-slider {

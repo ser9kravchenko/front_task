@@ -19,3 +19,16 @@
     }
   }
 }
+
+@media(max-width:600px){
+  .blue-blocks{
+    .blue-blocks__body{
+      margin: 0 0 -10px 0px;
+
+      .blue-block{
+        margin: 0 0 10px 0;
+        display: block;
+      }
+    }
+  }
+}
